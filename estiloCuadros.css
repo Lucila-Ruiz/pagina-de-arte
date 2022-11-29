@@ -1,0 +1,99 @@
+
+#btn-contacto{
+    display: none;
+}
+
+.menu{
+    height: 1px;
+}
+
+main{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+#flechas{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#flechas:hover{
+    filter: drop-shadow(4px 4.5px 5px #fff);
+}
+
+#flecha-izq, #flecha-der{
+    height: 100%;
+    width: 10%;
+    background-color:#000;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#contenedor-medio{
+    height: 100%;
+    width: 80%;
+    background-color: #000;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor-img{
+    height: 90%;
+    width: 100%;
+    background-color: #000; 
+    display: flex;
+    justify-content: center;
+}
+
+#img-vertical{
+    height: 100%;
+    width: 50%;
+    border: 3px solid #fff;
+}
+
+#img-horizontal{
+    height: 100%;
+    width: 100%;
+    border: 3px solid #fff;
+}
+
+#contenedor-txt{
+    height: 10%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor-txt p{
+    text-align: center;
+    font-size: 25px;
+    font-family: Roboto;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 3px 0px 8px rgb(237, 187, 24);
+}
+
+/*-----------------------------------------------------------------------------*/
+
+@media(max-width:768px){
+
+    #btn-contacto{
+        display: block;
+    }
+
+    #flecha-izq, #flecha-der, #contenedor-medio{
+        height: 50%;
+        padding-top: 40px;
+    }
+    
+    #contenedor-txt p{
+        font-size: 15px;
+    }
+   
+}

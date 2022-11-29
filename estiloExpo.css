@@ -1,0 +1,144 @@
+.menu{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(211, 171, 59, 0.5);
+}
+main{
+    margin:0;
+    height: 100%;
+    
+}
+
+
+#p-nav{
+    color: #fff;
+    font-family: Roboto;
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+    bottom: 30px;
+}
+
+
+#p-nav a{
+    border:1px solid #fff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: italic;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+#p-nav a:hover{
+    text-shadow: 3px 0px 8px rgb(255, 255, 255);
+    box-shadow:3px 0px 8px rgb(255, 255, 255);
+    font-size: large;
+}
+
+#enlace-cerati{
+    color: rgb(211, 171, 59);
+}
+
+#enlace-cerati:hover{
+    text-shadow: 3px 0px 8px rgb(255, 255, 255);
+}
+
+.contenedor-expo{
+    display: flex;
+    height: 90%;
+    width: 100%;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+article{
+    height: 100%;
+    width: 100%;
+    background-color:transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#btn-contacto{
+    display: none;
+}
+
+#aside-izq{
+    height: 100%;
+    width:30%;
+    background-color:rgb(211, 171, 59, 0.5);
+}
+
+#aside-der{
+    height: 100%;
+    width:70%;
+    background-color:rgba(147, 34, 26, 0.5);
+}
+
+#titulo-1{
+    font-size: 22px;
+    letter-spacing: 0.6;
+    padding-top: 15px;
+}
+
+.p-arribauno{
+    margin-bottom: 75px;
+}
+.p-arribados{
+    margin-bottom: 40px;
+}
+
+#p-expo{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+#img-expo{
+    height:170px;
+    width: 170px;
+    margin: 20px;
+    border: 2px solid #fff;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+@media(max-width:768px){
+    #btn-contacto{
+        display: block;
+    }
+
+    #p-nav{
+        display: none;
+    }
+
+    .body-expo{
+        position: relative;
+        height: 1100px;
+    }
+
+    .contenedor-expo{
+        width: 80%;
+        height: 80%;
+        flex-direction:column;
+        margin: auto;
+        margin-top: 0%;
+    }
+
+    #img-expo{
+        height: 40%;
+        width: 90%;
+        margin: 15px;
+    }
+
+    footer{
+        position:absolute;
+        bottom: 0;
+    }
+}

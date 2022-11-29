@@ -1,0 +1,339 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    background-image: url(./imagenes/paleta-arte.png);
+    background-size:auto;
+    background-repeat:no-repeat;
+    height:700px;
+    width: 1350px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color:rgba(211, 171, 59, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    background-color:transparent;
+    width: auto;
+    height: auto;
+    font-family: 'Pinyon Script', cursive;
+    font-size:45px;
+    letter-spacing: 10px;
+    text-shadow: -8px 6px 7px rgba(80, 62, 16, 0.99);
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size:35px;
+    font-weight: 60;
+    letter-spacing:5px;
+    color: rgb(255, 255, 255);
+    text-shadow: -8px 6px 7px rgba(80, 62, 16, 0.99);
+}
+
+h3{
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    font-family: 'Splash', cursive;
+    color: rgb(181, 27, 27);
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 3px 0px 8px rgb(255, 255, 255);
+}
+
+main{
+    height: 80%;
+    width: 100%;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.btn-resps{
+    display: none;
+}
+
+main label{
+    display: block;
+    display: none;  
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    
+}
+
+.menu{
+    background-color: transparent;
+    height: 10%;
+}
+
+.menu ul{
+    margin-left:10px;
+    margin-right:10px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 55px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.menu li{
+    border: .5px solid #fff;
+}
+
+.menu li:hover{
+    text-shadow: 3px 0px 8px rgb(255, 255, 255);
+    box-shadow:3px 0px 8px rgb(255, 255, 255);
+    font-size: large;
+}
+
+#contenedor_cuadro{
+    margin: auto;
+    background-color:transparent;
+    height:70%;
+    width: 30%;
+    justify-content: center;
+}
+
+#imagen_cuadro{
+    
+    height: 100%;
+    width: 100%;
+    background-color:transparent;
+}
+
+.segundo-nav-main{
+    height: 20%;
+    width: 100%;
+}
+
+.segundo-nav-main ul li{
+    list-style: none;
+}
+
+.segundo-nav-main ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+#enlacefinal{
+    display: flex;
+}
+
+#enlacefinal:hover{
+    text-shadow: 3px 0px 8px rgb(255, 215, 69);
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.enlaces-main{
+    display: flex;
+    flex-direction: row;
+    height:100%;
+    width: 100%;
+    background-color:transparent;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(123, 98, 29, 0.5);
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    text-shadow: 3px 0px 8px rgb(255, 255, 255);
+    
+}
+
+footer{
+    height: 10.5%;
+    width: 100%;
+    background-color:rgb(211, 171, 59, 0.5);
+
+}
+
+footer ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    color: #fff;
+    margin-right: 10px;
+}
+
+#item-footer{
+    float:left;
+}
+
+#link-footer{
+    margin-right: 70px;
+}
+
+#link-footer:hover{
+    text-shadow: 3px 0px 8px rgb(255, 255, 255);
+    font-size: large;
+}
+
+#img_insta{
+    width: 70px;
+    height:70px;
+    background-color: transparent;
+    margin-right: 0;
+}
+
+#img_insta:hover{
+    width: 80px;
+    height: 80px;
+}
+
+#img_mail{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#img_mail:hover{
+    width: 50px;
+    height: 50px;
+}
+
+#img_git{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#img_git:hover{
+    height: 50px;
+    width: 50px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+@media(max-width:768px){
+    main label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        width: 38%;
+        margin-left: -70%; 
+        transition: all 0.9s; 
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    
+    .menu ul li{
+        background-color:rgb(211, 171, 59, 0.5);
+        margin-top: 40px;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+
+    .menu ul li:hover{
+        background-color: rgb(181, 27, 27);
+    }
+
+    .menu li{
+        border: 1px solid #fff;
+    }
+
+    .enlaces-main{
+        background-color: transparent;
+        height: 1px;
+    }
+    
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    } 
+
+    .btn-resps{
+       display: block;
+       background-color:rgb(211, 171, 59, 0.5);
+    }
+
+    .btn-resps:hover{
+        background-color:rgb(181, 27, 27);
+    }
+
+    #icono{
+        height: 50px;
+        width: 50px;
+        position:relative;
+        bottom: 90px;
+        filter: drop-shadow(4px 4.5px 5px #fff);
+    }
+
+    header h1{
+        margin-left: 25px;
+    }
+
+    header h1, h2, h3{
+        font-size:25px;
+    }
+
+    #contenedor_cuadro{
+        width: 80%;
+        height: 90%;
+    }
+
+    #imagen_cuadro{
+        width: 100%;
+    }
+
+    #enlacefinal{
+        display: none;
+    }
+
+    body{
+        width: 100%;
+        height: 1000px;
+        background-size: auto;
+    }
+
+    #link-footer{
+        font-size: 10px;
+        margin-right: 10px;
+    }
+}
